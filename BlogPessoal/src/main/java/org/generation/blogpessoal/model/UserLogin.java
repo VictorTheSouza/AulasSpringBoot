@@ -2,6 +2,8 @@ package org.generation.blogpessoal.model;
 
 public class UserLogin {
 	
+
+
 	private String nome;
 	
 	private String usuario;
@@ -9,6 +11,15 @@ public class UserLogin {
 	private String senha;
 	
 	private String token;
+
+
+	public UserLogin() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public UserLogin(Usuario usuario) {
+		// TODO Auto-generated constructor stub
+	}
 
 	public String getNome() {
 		return nome;

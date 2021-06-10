@@ -29,6 +29,16 @@ public class Postagem {
 	@Size(min = 5, max = 100)
 	private String titulo;
 	
+	public Postagem(long id, @NotNull @Size(min = 5, max = 100) String titulo,
+			@NotNull @Size(min = 10, max = 500) String texto, Date date, Tema tema) {
+		super();
+		this.id = id;
+		this.titulo = titulo;
+		this.texto = texto;
+		this.date = date;
+		this.tema = tema;
+	}
+
 	@NotNull
 	@Size(min = 10, max = 500)
 	private String texto;
